@@ -1,58 +1,102 @@
-/* General Elements*/
-body{
-    background: url("../images/crystalBg.jpg") no-repeat;
+body {
     max-width: 950px;
     margin: 0 auto;
+    background: url(../images/crystalBg.jpg) no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main ul, main h2 {
+    margin: 20px;
+    line-height: 25px;
     
 }
 
+.numberToMatch, .winsAndLosses {
+    float: left;
+    width: 45%;
+    background-color: #56a1d3;
+    margin-top: 40px;
+    border-radius: 3px;
+}
+
+.numberToMatch h2, .winsAndLosses h2 {
+    margin: 5px;
+    padding: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.userTotal h2 {
+    padding: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 43%;
+    text-transform: uppercase;
+    background-color: #56a1d3;
+    border-radius: 3px;
+}
+
+
+
+.winsAndLosses {
+    margin-left: 47px;
+}
+
+
+
 
 h2 {
-    margin: 10px;
+    padding: 20px 0;
+    display: block;
+    width: 50%;
+    font-size: 1.5rem;
 }
 
-.header {
-    text-align: center;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    padding: 10px;  
+section div h2, .winsAndLosses {
+    float: left;
+    width: 50%;
+}
+
+main {
+    background-color: #56a1d3;
+    padding: 20px 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px #ccc;
+    margin-bottom: 20px;
 }
 
 
-
-h1, h3, span{
-	font-weight: bold;
-	text-align: center;
+img {
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #56a1d3;
 }
 
-ol{
-	list-style: decimal inside; 
-}
-ul {
-	list-style: disc inside;
-	text-indent: 20px;
-}
-/* Specfic Elements*/
-div.header, div.gems{
-	background-color: #e0e0eb;
+span {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
 }
 
-/* Classes */
-.numberToMatch, .winsAndLosses{
-	float: left;
-	width: 15%;
-	height: 60px;
+hr {
+    width: 50%;
+    border-color: #ccc;
 }
-.userTotal{
-	width: 15%;
-	height: 60px;
-}
-.gems{
-	clear: both;
-}
-.gemImage{
-	height: 60px;
-	margin: 10px;
-}
+
 

@@ -4,36 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Collector!</title>
-    <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assests/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
+
 </head>
 
 <body>
-        <h1 class="header">Crystal Collector!</h1>
-    
-        <ul>
-            <li>You will be given a random number at the start of the game.</li>
-            <li>There are four crystals below. By clicking on a crystal you add a specific amount of points to your
-                total score.</li>
-            <li>You win the game by matching your total score to the random number. You lose the game if your total 
-                score goes above the random number.</li>
-            <li>The value of each crystal is hidden from you until you click on it.</li>
-            <li>Each time when the game starts, the game will change the values of each crystal.</li>
-        </ul>
-    
-    <div class="numberToMatch">
-        <h2>Number To Get:
-            <span id="randomNumber"></span>
-        </h2>
+    <div class="wrapper">
+        <header>
+            <h1>Crystal Collector!</h1>
+        </header>
     </div>
-    <div class="winsAndLosses">
-        <h2>Wins:
-            <span id="numberWins"></span>
-            </br>
-            Losses:
-            <span id="numberLosses"></span>
-        </h2>
-    </div>
+    <main>
+        <section>
+            <h2>Games' Rules</h2>
+            <hr>
+            <ul>
+                <li>You will be given a random number at the start of the game.</li>
+                <li>There are four crystals below. By clicking on a crystal you add a specific amount of points to your
+                    total score.</li>
+                <li>You win the game by matching your total score to the random number. You lose the game if your total
+                    score goes above the random number.</li>
+                <li>The value of each crystal is hidden from you until you click on it.</li>
+                <li>Each time when the game starts, the game will change the values of each crystal.</li>
+            </ul>
+        </section>
+        <section>
+            <div class="numberToMatch">
+                <h2>Number To Get:
+                    <span id="randomNumber"></span>
+                </h2>
+            </div>
+            <div class="winsAndLosses">
+                <h2>Wins:
+                    <span id="numberWins"></span>
+                    </br>
+                    Losses:
+                    <span id="numberLosses"></span>
+                </h2>
+            </div>
+        </section>
+    </main>
+
     <div class="gems">
         <img src="./assests/images/red.png" class=gemImage id="one" alt="Blue Gem" width='50'>
         <img src="./assests/images/blue.png" class=gemImage id="two" alt="Green Gem" width="50">
@@ -45,7 +57,7 @@
             <span id="finalTotal"></span>
         </h2>
     </div>
-    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script type="text/javascript" src="./assests/javascript/game.js"></script>
 </body>
