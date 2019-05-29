@@ -1,0 +1,58 @@
+/* General Elements*/
+body{
+    background: url("../images/crystalBg.jpg") no-repeat;
+    max-width: 950px;
+    margin: 0 auto;
+    
+}
+
+
+h2 {
+    margin: 10px;
+}
+
+.header {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    padding: 10px;  
+}
+
+
+
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+}
+
+ol{
+	list-style: decimal inside; 
+}
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
+}
+/* Specfic Elements*/
+div.header, div.gems{
+	background-color: #e0e0eb;
+}
+
+/* Classes */
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+.userTotal{
+	width: 15%;
+	height: 60px;
+}
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+
