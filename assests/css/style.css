@@ -1,102 +1,89 @@
 body {
-    max-width: 950px;
-    margin: 0 auto;
     background: url(../images/crystalBg.jpg) no-repeat;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
 
 header h1 {
+    font-size: 32px;
     text-align: center;
     padding: 20px;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #d8dede;
+    text-shadow: 2px 3px #5c97c5;   
+}
+
+.gems {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    /* border: 2px solid #5c97c5; */
+    border-radius: 5px;
+}
+
+.gems img {
+    width: 120px;
+    padding: 5px 3px;
+    border-radius: 50%;
+    border: 5px solid #5c97c5;
+    box-shadow: 1px 2px  #ccc;
+    background-color: #fff;
+    transition: width .2s;
+}
+
+.gems img:hover {
+    width: 122px;
+    box-shadow: none;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+#rules {
+    position: absolute;
+    bottom: 10px;
+}
+
+
+#rules > p, h2 {
+    font-size: .8em;
+    line-height: 23px; 
+    margin-left: 10px;
+    color: #d8dede; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#rules > h2 {
+    margin-bottom: 10px;
+}
+
+#game__details {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    line-height: 24px; 
+    margin-top: 35px;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #000;
+    font-size: 1.2em;
 }
 
-main ul, main h2 {
-    margin: 20px;
-    line-height: 25px;
-    
+#game__details h2 {
+    margin-bottom: 7px;
 }
 
-.numberToMatch, .winsAndLosses {
-    float: left;
-    width: 45%;
-    background-color: #56a1d3;
-    margin-top: 40px;
-    border-radius: 3px;
-}
-
-.numberToMatch h2, .winsAndLosses h2 {
-    margin: 5px;
-    padding: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.userTotal h2 {
-    padding: 0;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 43%;
-    text-transform: uppercase;
-    background-color: #56a1d3;
-    border-radius: 3px;
-}
-
-
-
-.winsAndLosses {
-    margin-left: 47px;
-}
-
-
-
-
-h2 {
-    padding: 20px 0;
-    display: block;
-    width: 50%;
-    font-size: 1.5rem;
-}
-
-section div h2, .winsAndLosses {
-    float: left;
-    width: 50%;
-}
-
-main {
-    background-color: #56a1d3;
-    padding: 20px 0;
-    border-radius: 3px;
-    box-shadow: 3px 3px #ccc;
-    margin-bottom: 20px;
-}
-
-
-img {
-    border-radius: 50%;
-    padding: 7px;
-    background-color: #56a1d3;
-}
-
-span {
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    background-color: #000;
-    padding: 5px;
-    border-radius: 50%;
-    border: 1px solid #fff;
+#numberWins, #numberLosses, #finalTotal {
+    font-size: 25px;
+    color: blue;
+    padding: 3px;
+    padding-right: 10px;
 }
 
 hr {
-    width: 50%;
-    border-color: #ccc;
+    width: 400px;
+    border-color: #e3e3e3;
 }
-
-
