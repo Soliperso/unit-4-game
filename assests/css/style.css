@@ -1,89 +1,94 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #0d0d0d;
+  --light: #f2f2f2;
+  --tertiary: dodgerblue;
+}
+
 body {
-    background: url(../images/crystalBg.jpg) no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--dark);
+  color: var(--tertiary);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+header {
+  width: 480px;
 }
 
 header h1 {
-    font-size: 32px;
-    text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    color: #d8dede;
-    text-shadow: 2px 3px #5c97c5;   
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px;
+  font-weight: bolder;
+  font-size: 2.3rem;
+  border-radius: 10px;
+}
+
+.score-container {
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0px;
+}
+
+.score-container h3 {
+  font-size: 1.5rem;
+  transform: scale(1, 1.8);
+  margin-bottom: 10px;
 }
 
 .gems {
-    display: flex;
-    justify-content: space-around;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 50px;
-    padding: 20px;
-    /* border: 2px solid #5c97c5; */
-    border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 12rem;
 }
 
 .gems img {
-    width: 120px;
-    padding: 5px 3px;
-    border-radius: 50%;
-    border: 5px solid #5c97c5;
-    box-shadow: 1px 2px  #ccc;
-    background-color: #fff;
-    transition: width .2s;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
 }
 
 .gems img:hover {
-    width: 122px;
-    box-shadow: none;
-    cursor: pointer;
-    transform: rotate(180deg);
-    transition: .5s;
+  cursor: pointer;
+  transform: rotate(180deg);
 }
 
-#rules {
-    position: absolute;
-    bottom: 10px;
+.number {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
 }
 
-
-#rules > p, h2 {
-    font-size: .8em;
-    line-height: 23px; 
-    margin-left: 10px;
-    color: #d8dede; 
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+span {
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
-#rules > h2 {
-    margin-bottom: 10px;
-}
-
-#game__details {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    line-height: 24px; 
-    margin-top: 35px;
-    letter-spacing: 1px;
-    font-size: 1.2em;
-}
-
-#game__details h2 {
-    margin-bottom: 7px;
-}
-
-#numberWins, #numberLosses, #finalTotal {
-    font-size: 25px;
-    color: blue;
-    padding: 3px;
-    padding-right: 10px;
-}
-
-hr {
-    width: 400px;
-    border-color: #e3e3e3;
+@media (min-width: 768px) {
+  .gems {
+    display: flex;
+  }
 }
